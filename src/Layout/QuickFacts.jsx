@@ -24,9 +24,10 @@ const QuickFacts = () => {
   ];
 
   return (
-    <div className="px-4 container mx-auto py-16">
-      <h1 className="text-2xl font-semibold mb-10 text-center">Quick facts</h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14">
+  <div className="bg-white">
+      <div className="px-4 container mx-auto py-16">
+      <h1 className="text-3xl font-semibold mb-10 text-center">Quick facts</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 md:gap-14">
         {/* facts map */}
         {facts?.map((item, index) => (
           <div key={index} className="flex gap-3 items-start">
@@ -36,6 +37,7 @@ const QuickFacts = () => {
         ))}
       </div>
     </div>
+  </div>
   );
 };
 

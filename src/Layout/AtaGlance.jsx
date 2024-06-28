@@ -24,7 +24,7 @@ const AtaGlance = () => {
         />
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 justify-between items-center">
           {/* 1st column */}
-          <div className="flex flex-col gap-6 justify-between font-medium text-base md:text-lg">
+          <div className="flex flex-col gap-6 justify-between font-medium text-sm sm:text-base md:text-lg">
             <ul className="list-disc ml-14 ">
               {requiredDocuments.map((item, index) => (
                 <li className="" key={index}>

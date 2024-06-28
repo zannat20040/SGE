@@ -23,7 +23,7 @@ const Statement = () => {
             <StatementImg />
           </div>
           {/* 2nd column */}
-          <div className="flex flex-col gap-6 justify-between font-medium text-base md:text-lg py-5">
+          <div className="flex flex-col gap-6 justify-between font-medium text-sm sm:text-base md:text-lg py-5">
             <p>
               The Statement of Purpose (SOP) is a crucial document for students
               who want to study abroad. It is typically 1000–1200 words long and

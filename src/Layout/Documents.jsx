@@ -24,7 +24,7 @@ const Documents = () => {
         />
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 justify-between items-center">
           {/* 1st column */}
-          <div className="flex flex-col gap-6 justify-between font-medium text-base md:text-lg">
+          <div className="flex flex-col gap-6 justify-between font-medium text-sm sm:text-base md:text-lg">
             <p>
               International students intending to study in the USA must secure
               an F-1 student visa. The visa application process can be initiated

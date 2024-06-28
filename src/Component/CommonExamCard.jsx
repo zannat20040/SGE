@@ -8,14 +8,14 @@ const CommonExamCard = ({title, requiredExam}) => {
         className={`shadow-lg p-14 pb-0 hover:pb-28 rounded-3xl duration-1000 group`}
       >
         <div className="text-[#004AC8]">
-          <h1 className="font-semibold text-2xl  sm:text-3xl lg:text-4xl mb-3 ">
+          <h1 className="font-semibold text-xl  sm:text-2xl lg:text-4xl mb-3 ">
             {title}
           </h1>
 
           <div className=" h-0 group-hover:h-auto  opacity-0 group-hover:opacity-100  duration-500">
             <ul className="list-disc ml-7 ">
               {requiredExam.map((item, index) => (
-                <li className="" key={index}>
+                <li className="lg:text-base text-sm " key={index} >
                   {item}
                 </li>
               ))}

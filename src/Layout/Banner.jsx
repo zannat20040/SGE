@@ -8,7 +8,7 @@ import banner8 from "../assets/Banner/Vector (6).png";
 
 const Banner = () => {
   return (
-    <div className="bg-[#3E40C3] pt-10 rounded-3xl relative h-[300px] sm:h-[400px] lg:h-[730px] overflow-hidden group w-full">
+    <div className="bg-[#3E40C3] pt-10 rounded-3xl relative h-[400px] lg:h-[730px] overflow-hidden group w-full">
       {/*cloud1  */}
       <img
         src={banner1}
@@ -51,12 +51,12 @@ const Banner = () => {
       </div>
 
       {/* banner text */}
-      <div className="container mx-auto flex justify-end -mt-16 px-4">
+      <div className="container mx-auto flex justify-end -mt-0 sm:-mt-16 px-4">
         <div className="w-fit text-center z-50">
-          <h1 className="font-bold text-2xl sm:text-4xl lg:text-6xl text-white mb-0 sm:mb-5">
+          <h1 className="font-bold text-4xl lg:text-6xl text-white mb-0 sm:mb-5">
             Study in the USA
           </h1>
-          <p className="font-medium text-xs sm:text-base  lg:text-lg text-[#88F3D0] max-w-sm mx-auto">
+          <p className="font-medium text-base  lg:text-lg text-[#88F3D0] max-w-sm mx-auto">
             Here’s a comprehensive guide for all students who want to study in
             the USA
           </p>

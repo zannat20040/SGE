@@ -8,7 +8,8 @@ import SectionHeading from "../Component/SectionHeading";
 
 const Requirement = () => {
   return (
-    <div className="container mx-auto px-4 py-32">
+  <div className="bg-white">
+      <div className="container mx-auto px-4 py-32">
       {/* heading */}
       <SectionHeading label={"Requirements for Studying in the US"} />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt">
@@ -46,6 +47,7 @@ const Requirement = () => {
         </div>
       </div>
     </div>
+  </div>
   );
 };
 

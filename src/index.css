@@ -114,6 +114,8 @@
   font-family: "Poppins", sans-serif;
 }
 
+
+
 @keyframes scale-animation {
   0%,
   100% {
@@ -500,4 +502,38 @@
 
 .faqAnimation5 {
   animation: faq-Animation5 5s infinite;
+}
+
+
+
+@media screen and (max-width: 580px) {
+  .why-us {
+    height: 600px;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 580px) {
+  .why-us {
+    height: 650px;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 450px) {
+  .why-us {
+    height: 750px;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 400px) {
+  .why-us {
+    height: 800px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 350px) {
+  .why-us {
+    height: 910px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .why-us {
+    height: 950px;
+  }
 }

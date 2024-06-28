@@ -151,23 +151,13 @@ const TopUniversity = () => {
     },
   ];
 
-  // uiversity details show & hide logic
   const [selectedUniversity, setSelectedUniversity] = useState(null);
-
-  const handleUniversityHover = (university) => {
-    setSelectedUniversity(university);
-  };
-
-  const handleUniversityLeave = () => {
-    setSelectedUniversity(null);
-  };
 
   return (
     <div className="bg-[#EFF6FF] md:py-32 py-16 rounded-3xl  px-4  ">
       {/* heading component */}
       <SectionHeading label={"Top Universities in The USA"} />
 
-      {/* top university section */}
       <div
         className={`grid grid-cols-3 justify-between items-start  container mx-auto`}
       >
@@ -178,17 +168,16 @@ const TopUniversity = () => {
               : "col-span-3 w-full grid-cols-3 md:grid-cols-6 "
           } custom-scroll`}
         >
-          {/* university logo shhow */}
           {universities.map((university) => (
             <div
               key={university.id}
               className={` ${
                 selectedUniversity?.id === university?.id
-                  ? "border-b-8 border-blue-800 shadow-lg"
+                  ? "border-b-4 border-blue-800 shadow-lg"
                   : ""
               }    bg-white p-3 flex justify-center items-center cursor-pointer duration-500 transition-all ease-in-out`}
-              onMouseEnter={() => handleUniversityHover(university)}
-              onMouseLeave={handleUniversityLeave}
+              onMouseEnter={() => setSelectedUniversity(university)}
+              onMouseLeave={() => setSelectedUniversity(null)}
             >
               <img
                 src={university.image}
@@ -199,7 +188,6 @@ const TopUniversity = () => {
           ))}
         </div>
 
-        {/* details show */}
         {selectedUniversity && (
           <div
             className={`col-span-2 sm:col-span-1 flex flex-col gap-7 pl-5 ${
