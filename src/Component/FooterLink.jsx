@@ -43,31 +43,22 @@ const FooterLink = () => {
   return (
     <footer className="relative w-full">
       <div className="mx-auto container  px-4 border-b border-white pb-5">
-        <div className="mx-auto grid w-full  gap-8 py-12 grid-cols-2 lg:grid-cols-4">
+        <div className="mx-auto grid w-full  gap-8 py-12 grid-cols-2 lg:grid-cols-4 justify-center poppins-regular">
           {SITEMAP.map(({ title, links }, key) => (
-            <div key={key} className="w-full">
+            <div key={key} className="w-full poppins-regular">
               <Typography
                 variant="small"
                 color="blue-gray"
-                className="mb-4  uppercase text-white "
+                className="mb-4  uppercase text-white poppins-regular"
               >
                 {title}
               </Typography>
               <ul className="space-y-1">
                 {links.map((link, key) => (
-                  <Typography
-                    key={key}
-                    as="li"
-                    color="white"
-                    className=""
-                  >
-                    <a
-                      href="#"
-                      className="inline-block text-sm"
-                    >
-                      {link}
-                    </a>
-                  </Typography>
+                  <p   className="block text-white md:text-base font-extralight ">
+  {link}
+                  </p>
+                 
                 ))}
               </ul>
             </div>

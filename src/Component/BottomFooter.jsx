@@ -15,12 +15,12 @@ const BottomFooter = () => {
       </nav>
 
       <aside className="flex flex-wrap md:flex-nowrap gap-3 items-center justify-start md:justify-end col-span-2">
-        <p className="inline font-light">
+        <p className="inline font-light md:text-base text-sm">
           Copyright © 2024 - All right reserved{" "}
-          <p className="inline underline font-light">Sobuj Global Education</p>
+          <p className="inline underline font-light md:text-base text-sm">Sobuj Global Education</p>
         </p>
-        <p className=" font-light">Terms & Conditions</p>
-        <p className=" font-light">Privacy Policy</p>
+        <p className=" font-light md:text-base text-sm">Terms & Conditions</p>
+        <p className=" font-light md:text-base text-sm">Privacy Policy</p>
       </aside>
     </footer>
   );

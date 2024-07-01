@@ -5,7 +5,8 @@ import FAQImg from "../Component/FAQImg";
 
 const FAQ = () => {
   return (
-    <div className="container mx-auto px-4 p-16 md:first-letter:py-32">
+    <div className='bg-white'>
+      <div className="container mx-auto px-4 p-16 md:first-letter:py-32">
       <SectionHeading label={"Frequently Asked Questions"} />
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-6 justify-between items-center">
         <div className="flex justify-center">
@@ -29,15 +30,15 @@ const FAQ = () => {
           />
           <div className="collapse collapse-arrow join-item border-b border-gray-600 rounded-none text-white">
             <input type="radio" name="my-accordion-4" />
-            <div className="collapse-title text-xl ">
+            <div className="collapse-title text-base md:text-xl">
               Which subject is best to study in the USA?
             </div>
-            <div className="collapse-content font-light">
+            <div className="collapse-content font-light md:text-base text-sm">
               <p>
                 There are a few subjects that are popular among international
                 students studying in the USA. They are listed below.
               </p>
-              <ul className="list-disc ml-6  mt-6">
+              <ul className="list-disc ml-6  mt-6 md:text-base text-sm">
                 <li>Engineering and Technology</li>
                 <li> Business and Management</li>
                 <li> Law</li>
@@ -63,6 +64,7 @@ const FAQ = () => {
           />
         </div>
       </div>
+    </div>
     </div>
   );
 };
