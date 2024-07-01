@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* all fonts */
 .poppins-thin {
   font-family: "Poppins", sans-serif;
   font-weight: 100;
@@ -110,11 +112,14 @@
   font-style: italic;
 }
 
+
+/* univesal css */
 * {
   font-family: "Poppins", sans-serif;
 }
 
 
+/* css for why-us section */
 
 @keyframes scale-animation {
   0%,
@@ -163,6 +168,9 @@
   animation: scale-animation3 5s infinite;
 }
 
+
+/* css for program tab */
+
 .react-tabs__tab--selected div {
   background-color: #eff6ff;
   color: black;
@@ -172,6 +180,8 @@
   border-bottom-left-radius: 0;
 }
 
+
+/* css for popular text scroll animation  */
 @keyframes slide-in-out {
   0% {
     transform: translateY(20px);
@@ -202,6 +212,8 @@
   color: transparent;
 }
 
+
+/* css for exam section  */
 @keyframes arrow-animation {
   0% {
     bottom: 0;
@@ -217,6 +229,9 @@
 .arrow {
   animation: arrow-animation 3s infinite;
 }
+
+
+/* css for top university section */
 
 .custom-scroll {
   scrollbar-width: thin;
@@ -237,6 +252,9 @@
 .custom-scroll::-webkit-scrollbar-thumb:hover {
   background-color: rgb(16, 78, 147);
 }
+
+
+/* css for documents section */
 
 @keyframes docu-animation1 {
   0% {
@@ -288,6 +306,9 @@
 .docuAnimation4 {
   animation: docu-animation4 5s infinite;
 }
+
+
+/* css for statement section */
 
 @keyframes state-Animation1 {
   0% {
@@ -353,6 +374,9 @@
   animation: state-Animation3 3s infinite;
 }
 
+
+/* css for at a glance section */
+
 @keyframes ag-Animation1 {
   0% {
     transform: translateY(25px);
@@ -416,6 +440,9 @@
 .agAnimation4 {
   animation: ag-Animation4 5s infinite;
 }
+
+
+/* css for FAQ section */
 
 @keyframes faq-Animation3 {
   0% {
@@ -505,6 +532,7 @@
 }
 
 
+/* css for responsive in why-us section  */
 
 @media screen and (max-width: 580px) {
   .why-us {
@@ -537,3 +565,5 @@
     height: 950px;
   }
 }
+
+

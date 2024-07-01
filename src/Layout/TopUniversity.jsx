@@ -158,8 +158,10 @@ const TopUniversity = () => {
       {/* heading component */}
       <SectionHeading label={"Top Universities in The USA"} />
 
+      {/* top university section */}
       <div
         className={`grid grid-cols-3 justify-between items-start  container mx-auto`}
+        onMouseLeave={() => setSelectedUniversity(null)}
       >
         <div
           className={` transition-all duration-300 grid gap-6 ${
@@ -173,11 +175,10 @@ const TopUniversity = () => {
               key={university.id}
               className={` ${
                 selectedUniversity?.id === university?.id
-                  ? "border-b-4 border-blue-800 shadow-lg"
+                  ? "border-b-8 border-blue-800 shadow-lg"
                   : ""
               }    bg-white p-3 flex justify-center items-center cursor-pointer duration-500 transition-all ease-in-out`}
               onMouseEnter={() => setSelectedUniversity(university)}
-              onMouseLeave={() => setSelectedUniversity(null)}
             >
               <img
                 src={university.image}
@@ -201,11 +202,11 @@ const TopUniversity = () => {
               />
             </div>
 
-            <h2 className="text-3xl md:text-4xl font-semibold mb-2">
+            <h2 className="text-xl md:text-2xl lg:text-4xl font-semibold mb-2">
               {selectedUniversity.name}
             </h2>
-            <p className="">{selectedUniversity.details}</p>
-            <p className="font-bold ">{selectedUniversity.tagline}</p>
+            <p className="text-sm md:text-base ">{selectedUniversity.details}</p>
+            <p className="font-bold text-sm md:text-base  ">{selectedUniversity.tagline}</p>
             <div className="flex gap-2 items-center ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -226,9 +227,9 @@ const TopUniversity = () => {
                   d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
                 />
               </svg>
-              <p className=""> Located at {selectedUniversity.location}</p>
+              <p className="text-sm md:text-base "> Located at {selectedUniversity.location}</p>
             </div>
-            <button className="btn  bg-blue-600 rounded-full text-white font-light w-full">
+            <button className="btn text-sm md:text-base  bg-blue-600 rounded-full text-white font-light w-full">
               Apply Now
             </button>
           </div>
