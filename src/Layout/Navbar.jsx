@@ -30,7 +30,7 @@ function NavList() {
 
   return (
     // nav menu
-    <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1 ">
+    <List className="mt-4  p-0 lg:mt-0 mb-0 lg:flex-row lg:p-1 ">
       <Typography as="div" className="text-sm">
         <ListItem
           className={`flex items-center p-3 lg:py-5 gap-2 pr-4 font-medium text-black rounded-none border-b-4 border-transparent ${
@@ -170,7 +170,7 @@ export function NavbarWithMegaMenu() {
           {/* menu & button */}
 
           <NavList />
-          <div className="flex w-full flex-nowrap n items-center gap-2 lg:hidden">
+          <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
             <Button
               className="bg-[#BFDBFE] flex justify-between shadow-none rounded-2xl font-semibold text-sm capitalize hover:shadow-none text-black gap-2 items-center hover:bg-[#3E40C3] hover:text-white"
               fullWidth
