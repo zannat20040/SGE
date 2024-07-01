@@ -15,7 +15,7 @@ const FAQ = () => {
         </div>
 
         {/* FAQ accordion */}
-        <div className="join join-vertical w-full p-10 md:p-16 bg-[#00205B] mt-14 ">
+        <div className="join join-vertical w-full p-7 sm:p-10 md:p-12 bg-[#00205B] mt-14 ">
           <CommonAccordion
             title={"How much does it cost to study in the USA?"}
             desc={

@@ -28,10 +28,10 @@ const Popular = () => {
   return (
     <div className="px-4 py-24 bg-[#FAFAFA]">
       <div className="popular-container lg:max-w-4xl container mx-auto ">
-        <p className="font-semibold text-5xl inline leading-[1.30] ">
+        <p className="font-semibold lg:text-5xl text-3xl  inline leading-[1.30] ">
           Popular programs to study in the US  <span
           key={currentIndex}
-          className="inline font-semibold text-5xl fade-in-out linear-text-gradient break-words"
+          className="inline-block font-semibold lg:text-5xl text-3xl  fade-in-out linear-text-gradient break-words"
         >
           {fields[currentIndex]}
         </span>

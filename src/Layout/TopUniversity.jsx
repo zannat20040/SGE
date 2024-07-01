@@ -175,7 +175,7 @@ const TopUniversity = () => {
               key={university.id}
               className={` ${
                 selectedUniversity?.id === university?.id
-                  ? "border-b-8 border-blue-800 shadow-lg"
+                  ? "border-b-4 border-blue-800 shadow-lg"
                   : ""
               }    bg-white p-3 flex justify-center items-center cursor-pointer duration-500 transition-all ease-in-out`}
               onMouseEnter={() => setSelectedUniversity(university)}

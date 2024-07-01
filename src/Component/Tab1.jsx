@@ -16,7 +16,7 @@ const Tab1 = () => {
           <div className="overflow-x-auto ">
             <table className="w-full text-center border mx-auto border-gray-100  my-8">
               <thead>
-                <tr className="bg-[#00205B] text-white">
+                <tr className="bg-[#00205B] text-white ">
                   <th className="py-4 px-6 text-center ">Qualification</th>
                   <th className="py-4 px-6 text-center ">Duration</th>
                   <th className="py-4 px-6 text-center ">pswr*</th>

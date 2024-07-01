@@ -547,22 +547,22 @@
 }
 @media screen and (min-width: 400px) and (max-width: 450px) {
   .why-us {
-    height: 750px;
+    height: 700px;
   }
 }
 @media screen and (min-width: 350px) and (max-width: 400px) {
   .why-us {
-    height: 800px;
+    height: 760px;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 350px) {
   .why-us {
-    height: 910px;
+    height: 830px;
   }
 }
 @media screen and (max-width: 320px) {
   .why-us {
-    height: 950px;
+    height: 900px;
   }
 }
 

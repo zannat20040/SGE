@@ -5,11 +5,11 @@ import statue3 from "../assets/WhyUs/Vector.svg";
 
 const WhyUs = () => {
   return (
-    <div className="bg-[#EFF6FF] rounded-3xl py-16 px-10 ">
+    <div className="bg-[#EFF6FF] rounded-3xl py-16 md:px-10 px-4 ">
       <div className="grid grid-cols-1 md:grid-cols-10 container mx-auto bg-[#BF0C3D] rounded-3xl px-4 h-[650px] duration-150 md:h-auto why-us">
         {/* left text section  */}
         <div className="col-span-1 md:col-span-6 lg:col-span-8 text-center text-white p-6 md:p-14  md:pr-0">
-          <h1 className="text-2xl sm:text-4xl font-semibold mb-7">
+          <h1 className="text-2xl sm:text-4xl font-semibold mb-7 mt-5 md:mt-0">
             Why Study in The USA?
           </h1>
           <p className="font-light text-justify sm:text-base text-sm">
